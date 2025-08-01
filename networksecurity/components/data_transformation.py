@@ -103,6 +103,9 @@ class DataTransformation:
             save_numpy_array_data(self.data_transformation_config.transformed_test_file_path,array=test_arr)
             save_obj(self.data_transformation_config.transformed_object_file_path, preprocessor_object)
 
+            ## Saving final preprocessor object. This can be saved anywhere in aws s3 bucket or local 
+            save_obj("final_model/preprocessor.pkl",preprocessor_object)
+
             ## Preparing aritifacts
             data_transformation_artifact = DataTransformationArtifact(
                 transformed_object_file_path=self.data_transformation_config.transformed_object_file_path,

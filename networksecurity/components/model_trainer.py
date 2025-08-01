@@ -127,6 +127,9 @@ class ModelTrainer:
         network_model = NetworkModel(preprocessor=preprocessor,model=best_model)
         save_obj(self.model_trainer_config.trained_model_file_path,network_model)
 
+            ## Saving final best model. This can be saved anywhere in aws s3 bucket or local 
+        save_obj("final_model/model.pkl",best_model)
+
         ## Model trainer artifact
         return ModelTrainingArtifact(
             trained_model_file_path= self.model_trainer_config.trained_model_file_path,

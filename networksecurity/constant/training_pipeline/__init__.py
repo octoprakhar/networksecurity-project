@@ -7,6 +7,10 @@ import pandas as pd
 '''
 Defining common constant variable for training pipeline
 '''
+
+DATA_INGESTION_DATABASE_NAME = "PRAKHAR_NETWORKSECURITY"
+DATA_INGESTION_COLLECTION_NAME = "NetworkData"
+
 TARGET_COLUMN = "Result"
 PIPELINE_NAME:str = "NetworkSecurity"
 ARTIFACT_DIR:str = "Artifacts"
