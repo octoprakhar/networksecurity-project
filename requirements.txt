@@ -7,4 +7,5 @@ scikit-learn
 pyyaml
 dill
 scipy
+mlflow
 # -e .
