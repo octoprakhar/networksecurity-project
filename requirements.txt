@@ -8,4 +8,6 @@ pyyaml
 dill
 scipy
 mlflow
+dagshub
+joblib
 # -e .
